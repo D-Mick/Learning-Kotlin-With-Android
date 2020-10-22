@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         option = findViewById<Spinner>(R.id.spinner_id)
         result = findViewById<TextView>(R.id.result_id)
 
-        var items = arrayOf("Item 1","Item 2","Item 3")
+        val items = arrayOf("Item 1","Item 2","Item 3")
 
         option.adapter = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,items)
         option.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
