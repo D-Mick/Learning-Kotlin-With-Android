@@ -11,9 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var suggestions =  arrayOf("Apple","Samsung","Google","Huawei","HTC")
+        val suggestions =  arrayOf("Apple","Samsung","Google","Huawei","HTC")
 
-        var adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,suggestions)
+        val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,suggestions)
         auto_complete.threshold = 0
         auto_complete.setAdapter(adapter)
         auto_complete.setOnFocusChangeListener({ view, b -> if(b) auto_complete.showDropDown() })
